@@ -1,8 +1,166 @@
-<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:tools="http://schemas.android.com/tools"
-    android:id="@+id/container"
-    android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    tools:context="com.example.noname.MainActivity"
-    tools:ignore="MergeRootFrame" />
+<?xml version="1.0" encoding="utf-8"?>
 
+<TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/home_layout"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent" >
+    
+       
+    <!-- Prima riga: MENU PRINCIPALE -->
+
+    <TableRow
+        android:id="@+id/home_row1"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/menu_bg" >
+
+        <ImageView
+            android:id="@+id/logo_icon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="3dp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="50dp"
+            android:layout_marginTop="3dp"
+            android:background="@drawable/logo"
+            android:gravity="left" />
+
+        <View
+            android:layout_width="0dp"
+            android:layout_height="1dp"
+            android:layout_weight="1" >
+        </View>
+
+        <ImageButton
+            android:id="@+id/home_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:background="@drawable/is_home_icon"
+            android:gravity="right"
+            
+            android:onClick="" /> <!-- Qui va inserito il codice per richiamare l'azione al click del tasto -->
+
+        <View
+            android:layout_width="0dp"
+            android:layout_height="1dp"
+            android:layout_weight="1" >
+        </View>
+
+        <ImageButton
+            android:id="@+id/user_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:background="@drawable/user_icon"
+            android:gravity="right"
+            
+            android:onClick="" /> <!-- Qui va inserito il codice per richiamare l'azione al click del tasto -->
+
+        <View
+            android:layout_width="0dp"
+            android:layout_height="1dp"
+            android:layout_weight="1" >
+        </View>
+
+        <ImageButton
+            android:id="@+id/categories_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:background="@drawable/categories_icon"
+            android:gravity="right"
+            
+            android:onClick="" /> <!-- Qui va inserito il codice per richiamare l'azione al click del tasto -->
+
+        <View
+            android:layout_width="0dp"
+            android:layout_height="1dp"
+            android:layout_weight="1" >
+        </View>
+
+        <ImageButton
+            android:id="@+id/search_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:background="@drawable/search_icon"
+            android:gravity="right"
+            
+            android:onClick="" /> <!-- Qui va inserito il codice per richiamare l'azione al click del tasto -->
+
+        <View
+            android:layout_width="0dp"
+            android:layout_height="1dp"
+            android:layout_weight="1" >
+        </View>
+    </TableRow>
+
+
+    
+    
+<!-- Seconda riga: SWIPE MENU / PAGER 
+
+			LAYOUT TEMPORANEO
+
+-->    
+    
+    <TableRow
+        android:id="@+id/home_row2"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp" 
+		android:paddingBottom="6dp"     
+        android:background="@drawable/separator" >
+        
+        <View
+            android:layout_width="0dp"
+            android:layout_height="1dp"
+            android:layout_weight="1" >
+        </View>        
+        
+<TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:text="POPULAR"
+        android:textSize="10dp" />
+
+        <View
+            android:layout_width="0dp"
+            android:layout_height="1dp"
+            android:layout_weight="1" >
+        </View>
+
+<TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:text="RANDOM"
+        android:textSize="10dp" />
+
+        <View
+            android:layout_width="0dp"
+            android:layout_height="1dp"
+            android:layout_weight="1" >
+        </View>
+
+<TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:text="NEW"
+        android:textSize="10dp" />
+
+        <View
+            android:layout_width="0dp"
+            android:layout_height="1dp"
+            android:layout_weight="1" >
+        </View>
+
+   
+    </TableRow>
+    
+
+
+</TableLayout>
